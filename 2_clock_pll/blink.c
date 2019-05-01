@@ -31,26 +31,11 @@ void led_init(unsigned int led)
  * blink LED forever
  * 
  */
-void blink(unsigned int led)
+void LED_ON(unsigned int led)
 {
 	led_init(led);
 
-	unsigned int i;
-
-	while (1)
-	{
-		//set GPIOD led pin
-		SET_BIT(GPIO_BASE(GPIO_PORTD) + GPIOx_BSRR_OFFSET, BSy_BIT(led));
-
-		for (i = 0; i < 500000; i++)
-			;
-
-		//reset GPIOD led pin
-		SET_BIT(GPIO_BASE(GPIO_PORTD) + GPIOx_BSRR_OFFSET, BRy_BIT(led));
-
-		for (i = 0; i < 500000; i++)
-			;
-	}
+	SET_BIT(GPIO_BASE(GPIO_PORTD) + GPIOx_BSRR_OFFSET, BSy_BIT(led));
 }
 
 /**

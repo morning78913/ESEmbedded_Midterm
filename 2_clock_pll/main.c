@@ -6,8 +6,8 @@ void op_sysclk(unsigned int div);
 
 int main(void)
 {
-	op_sysclk(4);//op_sysclk(1);
-	blink(LED_BLUE);
+	op_sysclk(4);
+	LED_ON(LED_GREEN);
 }
 
 /**
