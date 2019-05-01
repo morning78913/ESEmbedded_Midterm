@@ -19,3 +19,9 @@
 3. 綠燈恆亮
 4. MCO2 輸出
 5. 附圖
+
+
+---
+![image](https://github.com/morning78913/ESEmbedded_Midterm/blob/master/Pic/Data%20Section%20address.jpg)
+
+![image](https://github.com/morning78913/ESEmbedded_Midterm/blob/master/Pic/Varifys.jpg)
