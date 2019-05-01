@@ -4,6 +4,8 @@
 
 void op_sysclk(unsigned int div);
 
+uint32_t array[] = {0xA, 0xB, 0xC, 0xD, 0xE, 0xF};	//global array
+
 int main(void)
 {
 	op_sysclk(4);
